@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+const path = require('path');
+
+module.exports = {
+  'config': path.resolve('src', 'config', 'database.js'),
+  'models-path': path.resolve('src', 'infrastructure' ,'sequelize'),
+  'seeders-path': path.resolve('src', 'infrastructure', 'database', 'seeders'),
+  'migrations-path': path.resolve('src', 'infrastructure', 'database', 'migrate'),
+};

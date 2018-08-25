@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "airbnb-base",
+    "plugin:jasmine/recommended"
+  ],
+  "plugins": ["jasmine"],
+  "env": {
+    "es6": true,
+    "node": true,
+    "jasmine": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "rules": {
+    //"semi": ["error", "never"],
+    //"comma-dangle": "off",
+    //"no-use-before-define": "off",
+    "arrow-parens": ["error", "always"],
+    "max-len": ["error", 120],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "no-underscore-dangle": ["error", { "allowAfterThis": true }]
+  }
+}
